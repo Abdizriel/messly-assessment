@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+
+.navbar {
+    border-bottom: 1px solid $border-color;
+    background: $white;
+    height: 4.5rem;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__branding {
+        display: flex;
+        align-items: center;
+        margin: 1.25rem 0;
+    }
+
+    &__logotype {
+        height: 3rem;
+    }
+
+    &__items {
+        margin-left: auto;
+    }
+
+    &__item {
+        text-decoration: none;
+        color: $text-color;
+        padding: 1.5rem 0 1.54rem;
+        margin: 1.25rem 1rem 1.25rem 0;
+        font-weight: 600;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &:focus, &:active {
+            color: $red;
+            border-bottom: 2px solid rgba(red, 1);
+        }
+
+        &--active {
+            color: $red;
+            border-bottom: 2px solid rgba(red, 1);
+        }
+    }
+}

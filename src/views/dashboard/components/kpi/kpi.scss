@@ -1,0 +1,19 @@
+@import '../../../../styles/variables';
+
+.kpi {
+    margin-top: 2rem;
+    background: $white;
+    border: 1px solid $border-color;
+    padding: 1rem;
+
+    &__text {
+        font-size: .75rem;
+        color: $kpi-value-color;
+    }
+
+    &__value {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $kpi-text-color;
+    }
+}
